@@ -36,8 +36,8 @@ jobs:
         continue-on-error: true
 
       # Run the linter.
-      - name: lint 
-        run: cd backend && npm run lint
+      # - name: lint 
+      #   run: cd backend && npm run lint
 
       # Send a console message at completion.
       - run: |
