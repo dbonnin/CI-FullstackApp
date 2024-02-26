@@ -28,11 +28,11 @@ jobs:
 
       # Install the dependencies.
       - name: Install Dependencies
-        run: npm install
+        run: cd backend && npm ci
 
       # Run the tests.
       - name: Build and Test
-        run: npm run build && npm run test
+        run: cd backend && npm test
         continue-on-error: true
 
       # Run the linter.
